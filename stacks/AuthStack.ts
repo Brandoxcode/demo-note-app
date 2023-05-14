@@ -3,6 +3,7 @@ import { Cognito, use } from "sst/constructs";
 import { StorageStack } from "./StorageStack";
 import { ApiStack } from "./ApiStack";
 
+authorizer: "iam"
 export function AuthStack(input: AuthStackInp): AuthStackRes {
     const { stack, app } = input
     const { bucket } = use(StorageStack);
