@@ -1,6 +1,7 @@
 import { Api, use } from "sst/constructs";
 import { StorageStack } from "./StorageStack";
 
+authorizer: "iam"
 export function ApiStack(input: ApiStackInp): ApiStackRes {
     const { stack, app } = input
     const { table } = use(StorageStack);
