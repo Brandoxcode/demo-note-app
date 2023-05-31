@@ -5,7 +5,7 @@ import { ApiStack } from "./ApiStack";
 
 
 export function AuthStack(input: AuthStackInp): AuthStackRes {
-    const { stack, app } = input
+    const { stack, app, iam } = input
     const { bucket } = use(StorageStack);
     const { api } = use(ApiStack);
 
@@ -44,6 +44,7 @@ export function AuthStack(input: AuthStackInp): AuthStackRes {
 export type AuthStackInp = {
     stack: any;
     app: any;
+    iam: any;
 }
 
 export type AuthStackRes = {
