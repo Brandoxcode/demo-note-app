@@ -1,7 +1,7 @@
 import { Table } from "sst/node/table";
 import * as uuid from "uuid";
 import handler from "@notes/core/src/handler";
-import dynamoDb from "./dynamodb";
+import dynamoDb from "@notes/core/src/dynamodb";
 
 export const main = handler(async (event) => {
     const data = JSON.parse(event.body);

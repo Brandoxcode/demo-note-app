@@ -8,7 +8,9 @@
   },
   "devDependencies": {
     "@types/node": "^20.1.4",
-    "sst": "^2.8.22",
     "vitest": "^0.31.0"
+  },
+  "dependencies": {
+    "sst": "^2.5.4"
   }
 }
